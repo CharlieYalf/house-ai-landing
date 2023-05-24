@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./style.css">
+	<script src="https://kit.fontawesome.com/a7086b0e27.js" crossorigin="anonymous"></script>
+	<title>Brisbane House Price Finder</title>
+</head>
+
+<body>
+	<!-- Nav Bar -->
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">BrisAi</a>
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">About</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- Header -->
+
+
+	<!-- Main -->
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<form>
+						<div class="form-group input-group-prepend">
+							<label for="suburb" class="input-group-text"> <i class="fas fa-house" aria-hidden="true"></i><span
+									class="sr-only">Suburb</span></label>
+							<select class="form-control" id="suburb">
+								<option value="1">Banyo</option>
+								<option value="2">Northgate</option>
+								<option value="3">Nundah</option>
+							</select>
+						</div>
+
+						<div class="form-group input-group-prepend">
+							<label for="bedrooms" class="input-group-text">
+								<i class="fas fa-bed" aria-hidden="true"></i><span class="sr-only">Bedrooms</span>
+							</label>
+							<select class="form-control" id="bedrooms">
+								<option value="1">1 Bed</option>
+								<option value="2">2 Beds</option>
+								<option value="3">3 Beds</option>
+								<option value="4">4 Beds</option>
+							</select>
+						</div>
+
+						<div class="form-group input-group-prepend">
+							<label for="bathrooms" class="input-group-text">
+								<i class="fas fa-bath" aria-hidden="true"></i><span class="sr-only">Bathrooms</span>
+							</label>
+							<select class="form-control" id="bathrooms">
+								<option value="1">1 Bathroom</option>
+								<option value="2">2 Bathrooms</option>
+								<option value="3">3 Bathrooms</option>
+							</select>
+						</div>
+
+						<div class="form-group input-group-prepend">
+							<label for="car-spots" class="input-group-text"> <i class="fas fa-car" aria-hidden="true"></i><span
+									class="sr-only">Car
+									Spots</span></label>
+							<select class="form-control" id="car-spots">
+								<option value="1">1 Parking Space</option>
+								<option value="2">2 Parking Spaces</option>
+								<option value="3">3 Parking Spaces</option>
+								<option value="4">4 Parking Spaces</option>
+							</select>
+						</div>
+
+						<div class="form-group input-group-prepend">
+							<label for="square-meters" class="input-group-text"> <i class="fas fa-maximize"
+									aria-hidden="true"></i><span class="sr-only">Size
+									(Square Meters)</span></label>
+							<input type="number" class="form-control" id="square-meters" name="square-meters" min="100" max="1500">
+						</div>
+
+						<div class="form-group input-group-prepend">
+							<label for="year-sold" class="input-group-text"> <i class="fas fa-calendar-days"
+									aria-hidden="true"></i><span class="sr-only">Year
+									Sold</span></label>
+							<input type="number" class="form-control" id="year-sold" name="year-sold" min="2000" max="2023">
+						</div>
+						<button class="btn btn-primary rounded-pill" type="submit" id="submit-btn">Guess Price</button>
+					</form>
+
+				</div>
+
+				<div class="col-md-6">
+
+					<object id="my-svg" type="image/svg+xml" data="./Local_Government_Areas.svg" class="img-fluid" width="80%"
+						height='100%'></object>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		<p></p>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+		integrity="sha384-8TSM8v2ZO+Mvxg/1PIbjLyARw31brl7vzbg4s3RtdiJZvKPPmnLzdClgR6oRLtc7" crossorigin="anonymous">
+		</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="./script.js"></script>
+</body>
+
+</html>
